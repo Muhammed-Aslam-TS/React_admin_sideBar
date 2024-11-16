@@ -1,0 +1,61 @@
+/* Main Sidebar Container */
+.sidebar {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Dark translucent background */
+  }
+  
+  /* Sidebar Button Styling */
+  .menu button {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    height: 56px;
+    width: 100%;
+    text-transform: capitalize;
+    line-height: 1;
+    padding: 0 10px;
+    border-radius: 8px;
+    color: #b8c2d8;
+    opacity: 0.9;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Inner Sidebar Layout */
+  .sidebar .inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  /* Menu Layout */
+  .menu {
+    display: grid;
+    padding: 0 10px;
+  }
+  
+  /* Resizer Handle Styling */
+  .handle {
+    position: absolute;
+    z-index: 100;
+    width: 8px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    user-select: none;
+    transition: background 0.3s;
+    cursor: col-resize;
+  }
+  
+  /* Handle Hover and Active State */
+  .handle:hover,
+  .handle:active {
+    background: rgba(0, 40, 80, 0.06);
+  }
+  
